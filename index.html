@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="SikshaSetu — AI-powered vernacular pedagogy and real-time translation for mother-tongue-based primary education.">
+<title>SikshaSetu · SIH 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="progress" id="progress"></div>
+
+<header class="nav-wrap">
+  <div class="nav">
+    <a class="brand" href="#home">
+      <img src="assets/sikshasetu-logo.png" alt="SikshaSetu logo">
+    </a>
+    <button class="menu" id="menu" aria-label="Open menu">☰</button>
+    <nav id="nav">
+      <a href="#home">Home</a>
+      <a href="#problem">Problem</a>
+      <a href="#solution">Solution</a>
+      <a href="#technology">Technology</a>
+      <a href="#impact">Impact</a>
+      <a href="#team">Team</a>
+      <a href="#mentors">Mentors</a>
+      <a href="#case-study">Case Study</a>
+      
+    </nav>
+    <span class="sih-pill">SIH 2026</span>
+  </div>
+</header>
+
+<main id="home">
+<section class="hero">
+  <div class="hero-grid">
+    <div class="hero-copy reveal">
+      <div class="eyebrow"><span></span> SMART INDIA HACKATHON 2026 · SOFTWARE</div>
+      <div class="hero-title">
+        <span class="word-dark">Siksha</span><span class="word-green">Setu</span>
+      </div>
+      <h1>Bridging languages.<br><em>Building understanding.</em></h1>
+      <p class="lead">AI-assisted multilingual learning that turns speech into understanding.</p>
+      <div class="chips">
+        <span>Mother-tongue learning</span><span>Real-time voice</span><span>AI-assisted</span><span>Offline-first direction</span>
+      </div>
+      <div class="hero-actions">
+        <a class="btn primary" href="#solution">Explore the solution <b>↘</b></a>
+        <a class="btn secondary" href="#solution-sheet">View SIH solution data</a>
+      </div>
+      <p class="quote">“When language becomes a bridge, learning can travel further.”</p>
+    </div>
+
+    <div class="hero-visual reveal delay-1">
+      <div class="hero-orb orb1"></div><div class="hero-orb orb2"></div>
+      <div class="classroom-card">
+        <div class="card-head">
+          <span class="live"><i></i> LIVE TRANSLATION BRIDGE</span>
+          <small>≤ 3s TARGET</small>
+        </div>
+
+        <div class="translation-pair">
+          <div class="language-card teacher">
+            <small>TEACHER</small>
+            <b>Hindi</b>
+            <p>“Aaj hum sankhya seekhenge.”</p>
+          </div>
+          <div class="pair-arrow" aria-hidden="true">→</div>
+          <div class="language-card student">
+            <small>STUDENT</small>
+            <b>Vernacular</b>
+            <p>Context-aware translated output</p>
+          </div>
+        </div>
+
+        <div class="speaking-zone" aria-label="Live speaking waveform">
+          <div class="wave" id="audioWave">
+            <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+            <i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+          </div>
+        </div>
+
+        <div class="pipeline-footer">
+          <b>Speech → Text → NLLB-200 → Text + Audio</b>
+          <span><i></i><em id="liveState">AI PROCESSING</em></span>
+        </div>
+      </div>
+      <div class="float-card fc1">◉ Voice-to-voice</div>
+      <div class="float-card fc2">⌁ Offline-first direction</div>
+      <div class="float-card fc3">✦ Bilingual content</div>
+    </div>
+  </div>
+</section>
+
+<section class="metrics">
+  <div><b>01</b><strong>Language-first</strong><small>Learning in familiar languages</small></div>
+  <div><b>02</b><strong>Two-way</strong><small>Teacher ↔ student communication</small></div>
+  <div><b>03</b><strong>AI-assisted</strong><small>Translation + learning content</small></div>
+  <div><b>04</b><strong>Scalable</strong><small>Designed for wider classroom use</small></div>
+</section>
+
+<section id="problem" class="section">
+  <div class="section-top reveal">
+    <div><label>01 · THE PROBLEM</label><h2>When language becomes a learning barrier.</h2></div>
+    <p>Primary teachers may be Hindi-medium trained while learners are more comfortable in tribal or regional languages.</p>
+  </div>
+  <div class="problem-layout">
+    <div class="problem-main reveal">
+      <span class="big-number">01</span>
+      <h3>Teacher–student language gap</h3>
+      <p>Teachers can lack the linguistic tools needed to deliver mother-tongue-based instruction confidently and continuously.</p>
+      <div class="problem-tag">COMMUNICATION → LEARNING</div>
+    </div>
+    <div class="problem-list">
+      <article class="reveal"><b>Limited digital resources</b><p>Low-resource languages have fewer digital NLP and educational resources.</p></article>
+      <article class="reveal"><b>Real-time classroom interaction</b><p>Classroom dialogue needs fast, simple communication rather than slow manual translation.</p></article>
+      <article class="reveal"><b>Manual bilingual material</b><p>Creating bilingual worksheets and activities can add to teacher workload.</p></article>
+      <article class="reveal"><b>Low-connectivity environments</b><p>A classroom solution should consider environments where internet access is inconsistent.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="dark section" id="solution">
+  <div class="section-top light reveal">
+    <div><label>02 · OUR SOLUTION</label><h2>From voice to understanding.</h2></div>
+    <p>One bridge for translation, bilingual content and classroom support.</p>
+  </div>
+  <div class="features">
+    <article class="feature reveal"><span class="ficon">◉</span><h3>Real-time voice translation</h3><p>Two-way teacher ↔ student voice interaction through speech recognition and translation.</p></article>
+    <article class="feature reveal"><span class="ficon">文</span><h3>Mother-tongue support</h3><p>Designed around tribal and regional language learning environments.</p></article>
+    <article class="feature reveal"><span class="ficon">▤</span><h3>Bilingual learning content</h3><p>Lesson scripts, instructions and learning activities can be presented bilingually.</p></article>
+    <article class="feature reveal"><span class="ficon">✦</span><h3>AI-generated worksheets</h3><p>Generate bilingual worksheets and classroom activities aligned to learning outcomes.</p></article>
+    <article class="feature reveal"><span class="ficon">◌</span><h3>Text-to-speech</h3><p>Translated content can be delivered as audio to support classroom participation.</p></article>
+    <article class="feature reveal"><span class="ficon">⌁</span><h3>Offline-first direction</h3><p>Designed toward offline use after initial content synchronization for low-connectivity settings.</p></article>
+  </div>
+
+  <div class="workflow reveal">
+    <div class="workflow-head"><span>HOW SIKSHASETU WORKS</span><small>Voice → understanding</small></div>
+    <div class="flow">
+      <div class="flow-step"><span class="flow-icon">🎙</span><b>Speech Input</b><small>Teacher / student</small></div>
+      <i>→</i>
+      <div class="flow-step"><span class="flow-icon">Aa</span><b>Speech to Text</b><small>Web Speech API</small></div>
+      <i>→</i>
+      <div class="flow-step ai"><span class="flow-icon">AI</span><b>AI Translation</b><small>NLLB-200</small></div>
+      <i>→</i>
+      <div class="flow-step"><span class="flow-icon">文</span><b>Translated Text</b><small>Context-aware output</small></div>
+      <i>→</i>
+      <div class="flow-step"><span class="flow-icon">🔊</span><b>Text to Speech</b><small>Audio delivery</small></div>
+      <i>→</i>
+      <div class="flow-step end"><span class="flow-icon">✓</span><b>Child Learns</b><small>In familiar language</small></div>
+    </div>
+  </div>
+</section>
+
+<section id="technology" class="section tech">
+  <div class="section-top reveal">
+    <div><label>03 · TECHNOLOGY</label><h2>The essential stack behind SikshaSetu.</h2></div>
+    <p>Only the technologies that directly power the core experience.</p>
+  </div>
+  <div class="tech-grid essential-tech">
+    <article class="tech-card reveal"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="React"><b>React + TypeScript</b><small>Frontend</small></article>
+    <article class="tech-card reveal"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="Python"><b>FastAPI + Python</b><small>Backend / API</small></article>
+    <article class="tech-card reveal"><span class="custom-logo">N</span><b>NLLB-200</b><small>AI translation</small></article>
+    <article class="tech-card reveal"><span class="custom-logo mic">◉</span><b>Web Speech API</b><small>Speech input</small></article>
+    <article class="tech-card reveal"><span class="custom-logo socket">↔</span><b>WebSocket</b><small>Real-time flow</small></article>
+  </div>
+  <div class="architecture reveal compact-architecture">
+    <div><small>INPUT</small><b>Speech</b><span>Teacher / student</span></div><i>→</i>
+    <div><small>PROCESS</small><b>FastAPI + NLLB-200</b><span>Speech → translation</span></div><i>→</i>
+    <div><small>REAL-TIME</small><b>WebSocket</b><span>Live communication</span></div><i>→</i>
+    <div><small>OUTPUT</small><b>Text + Audio</b><span>Familiar language</span></div>
+  </div>
+</section>
+
+<section id="impact" class="impact section">
+  <div class="section-top reveal">
+    <div><label>04 · IMPACT</label><h2>Technology with a classroom purpose.</h2></div>
+    <p class="section-short">A focused stack for real-time multilingual classroom translation.</p>
+  </div>
+  <div class="impact-grid">
+    <article class="impact-card reveal"><span>EDUCATIONAL</span><b>More understandable explanations</b><p>Supports teaching and participation through familiar language.</p></article>
+    <article class="impact-card reveal"><span>SOCIAL</span><b>Inclusive classroom communication</b><p>Can help reduce linguistic barriers between teachers and learners.</p></article>
+    <article class="impact-card reveal"><span>TEACHER SUPPORT</span><b>Less language friction</b><p>Assists teachers who do not fully know the learner's mother tongue.</p></article>
+    <article class="impact-card reveal"><span>ACCESSIBILITY</span><b>Voice + text interaction</b><p>Multiple output modes can make classroom assistance easier to use.</p></article>
+  </div>
+  <div class="vision reveal">
+    <div><span>OUR VISION</span><h3>Every child should be able to understand the lesson — without language becoming the barrier.</h3></div>
+    <div class="vision-points"><b>Inclusive</b><b>Multilingual</b><b>Accessible</b><b>Scalable</b></div>
+  </div>
+</section>
+
+<section id="team" class="team-section section">
+  <div class="section-top reveal">
+    <div><label>06 · TEAM</label><h2>Six roles. One shared purpose.</h2></div>
+    <p>A cross-functional team covering leadership, frontend experience, domain research, AI/NLP, integration, quality assurance, demo coordination and documentation.</p>
+  </div>
+  <div class="team-grid">
+    <article class="member reveal"><div class="member-photo"><img src="assets/team/aadarsh-kumar-chaudhary.jpeg" alt="Aadarsh Kumar Chaudhary"></div><div class="member-info"><span>01 · LEADERSHIP</span><h3>Aadarsh Kumar Chaudhary</h3><b>Team Leader · Tech Lead</b><p>Architecture, technical direction, coordination and overall system integration.</p></div></article>
+    <article class="member reveal"><div class="member-photo"><img src="assets/team/ibrahim-abdelmagid.jpeg" alt="IBRAHIM ABDELMAGID"></div><div class="member-info"><span>02 · PRODUCT</span><h3>IBRAHIM ABDELMAGID</h3><b>Frontend & UX Developer</b><p>React interface, user experience and classroom interaction flow.</p></div></article>
+    <article class="member reveal"><div class="member-photo"><img src="assets/team/bhavika-k1.jpeg" alt="Bhavika K1"></div><div class="member-info"><span>03 · RESEARCH</span><h3>Bhavika K1</h3><b>Domain Researcher</b><p>Education-domain research, user needs, language requirements and problem validation.</p></div></article>
+    <article class="member reveal"><div class="member-photo"><img src="assets/team/mahesh-rana.jpeg" alt="Mahesh Rana"></div><div class="member-info"><span>04 · AI / NLP</span><h3>Mahesh Rana</h3><b>AI/NLP & Integration Developer</b><p>AI/NLP pipeline, speech and translation integration, APIs and real-time processing.</p></div></article>
+    <article class="member reveal"><div class="member-photo"><img src="assets/team/krithika-s.jpeg" alt="Krithika S"></div><div class="member-info"><span>05 · QUALITY</span><h3>Krithika S</h3><b>QA & Demo Coordinator</b><p>Testing, demo reliability, live flow validation and fallback preparation.</p></div></article>
+    <article class="member reveal"><div class="member-photo"><img src="assets/team/saugat-yadav.jpeg" alt="Saugat Yadav"></div><div class="member-info"><span>06 · DOCUMENTATION</span><h3>Saugat Yadav</h3><b>PPT & Documentation Lead</b><p>PPT, case-study documentation, diagrams and final submission material.</p></div></article>
+  </div>
+</section>
+
+<section id="mentors" class="mentor-section section">
+  <div class="section-top reveal">
+    <div><label>07 · MENTORS</label><h2>Guidance behind the journey.</h2></div>
+    <p>Institutional mentorship and support from Rathinam Technical Campus.</p>
+  </div>
+  <div class="mentor-grid">
+    <article class="mentor reveal"><div class="mentor-photo"><img src="assets/mentors/mr-k-muthusamy.jpg" alt="Mr. K. Muthusamy"></div><div><span>MENTOR · TECHNICAL COMPETITIONS & HACKATHONS</span><h3>Mr. K. Muthusamy</h3><p>Head - Technical Competitions and Hackathons</p><small>Rathinam Technical Campus</small></div></article>
+    <article class="mentor reveal"><div class="mentor-photo"><img src="assets/mentors/er-gajendran-parthasarathi.jpg" alt="Er. Gajendran Parthasarathi"></div><div><span>MENTOR · DESIGN & INNOVATION</span><h3>Er. Gajendran Parthasarathi</h3><p>Head - School of Design and Innovation</p><small>Rathinam Technical Campus</small></div></article>
+  </div>
+</section>
+<section id="case-study" class="section case">
+  <div class="section-top reveal">
+    <div><label>05 · CASE STUDY</label><h2>From a real classroom context to a practical AI concept.</h2></div>
+    <p>A concise view of the case study: context, users, approach, solution, evaluation and future scope.</p>
+  </div>
+
+  <div class="case-intro reveal">
+    <div class="case-intro-copy">
+      <span>CASE STUDY LOCATION</span>
+      <h3>Rathinam Technical Campus, Coimbatore</h3>
+      <p>The academic case study focused on understanding a real-world teacher–student language gap and exploring how Artificial Intelligence could reduce that barrier through voice translation, bilingual educational content and classroom assistance.</p>
+    </div>
+    <div class="case-meta"><b>DOMAIN</b><span>Smart Education</span><b>TECHNOLOGY</b><span>Artificial Intelligence</span><b>FOCUS</b><span>Mother-tongue-based primary education</span></div>
+  </div>
+
+  <div class="case-gallery reveal">
+    <figure><img src="assets/case-study/case-study-page-2-1.jpg" alt="Rathinam Technical Campus case study"><figcaption>Case-study context · Rathinam Technical Campus</figcaption></figure>
+    <figure><img src="assets/case-study/case-study-page-4-1.jpg" alt="Team discussion during case study"><figcaption>Problem exploration and team discussion</figcaption></figure>
+    <figure><img src="assets/case-study/case-study-page-10-1.jpg" alt="Team project discussion"><figcaption>Solution exploration and project discussion</figcaption></figure>
+  </div>
+
+  <div class="case-block-grid">
+    <article class="case-block reveal"><span>01</span><h3>Case-study context</h3><p>Our academic case study at Rathinam Technical Campus focused on the teacher–student language gap and practical requirements such as voice interaction, bilingual content, simple usage and low-connectivity support.</p></article>
+    <article class="case-block reveal"><span>02</span><h3>Objective of the case study</h3><ul><li>Understand communication problems caused by language differences.</li><li>Identify the main users of the proposed system.</li><li>Understand teacher and student requirements.</li><li>Explore AI for real-time language translation.</li><li>Develop the concept of an easy-to-use educational assistant.</li><li>Support mother-tongue-based learning.</li><li>Consider offline usage for limited-connectivity areas.</li></ul></article>
+  </div>
+
+  <div class="problem-identification reveal">
+    <div class="mini-heading"><span>03</span><div><label>PROBLEM IDENTIFICATION</label><h3>Five classroom challenges</h3></div></div>
+    <div class="challenge-grid">
+      <article><b>Teacher–Student Language Barrier</b><p>A teacher may be trained in Hindi while students may be more comfortable communicating in a tribal or regional language, making instructions and explanations harder to understand.</p></article>
+      <article><b>Limited Digital Resources</b><p>Ho, Mundari and Santhali have fewer digital language resources compared with widely used languages, making language-based AI applications harder to build.</p></article>
+      <article><b>Difficulty in Real-Time Communication</b><p>Traditional translation tools may not be designed specifically for classroom interaction, where teachers need quick and simple communication without interrupting teaching.</p></article>
+      <article><b>Manual Learning Material Creation</b><p>Preparing bilingual worksheets, activities and other educational materials can require additional effort from teachers.</p></article>
+      <article><b>Poor Internet Connectivity</b><p>Continuous connectivity cannot always be guaranteed in rural areas, so a solution that depends completely on cloud services may not be practical.</p></article>
+    </div>
+  </div>
+
+  <div class="users-personas">
+    <div class="case-block reveal"><span>04</span><h3>Users & stakeholders</h3><div class="tag-cloud"><b>Primary User · Teacher</b><b>Secondary User · Student</b><b>Schools</b><b>Parents</b><b>Education Departments</b><b>School Administrators</b><b>Educational Content Developers</b></div></div>
+    <div class="case-block reveal"><span>05</span><h3>User personas</h3><div class="persona-stack">
+      <div><b>Teacher Persona</b><small>Primary School Teacher · Hindi-medium trained</small><p><strong>Problem:</strong> Difficulty communicating with students who mainly understand a different mother tongue.</p><p><strong>Needs:</strong> Quick translation · Voice-based interaction · Simple interface · Bilingual teaching content · Ready-to-use learning materials · Offline functionality.</p><p><strong>Goal:</strong> Explain lessons clearly without depending completely on another language-proficient teacher.</p></div>
+      <div><b>Student Persona</b><small>Primary School Student · Familiar mother tongue</small><p><strong>Problem:</strong> Difficulty understanding lessons when explained only in another language.</p><p><strong>Needs:</strong> Familiar language · Simple explanations · Audio support · Interactive learning · Easy-to-understand educational content.</p><p><strong>Goal:</strong> Understand classroom concepts and participate more confidently.</p></div>
+    </div></div>
+  </div>
+
+  <div class="approach reveal">
+    <div class="mini-heading"><span>06</span><div><label>CASE STUDY APPROACH</label><h3>Problem → users → requirements → solution → evaluation</h3></div></div>
+    <div class="steps-horizontal">
+      <div><b>01</b><strong>Understanding the Problem</strong><p>Identify the teacher–student language barrier.</p></div>
+      <div><b>02</b><strong>Identifying the Users</strong><p>Identify teachers and students as main users.</p></div>
+      <div><b>03</b><strong>Understanding Requirements</strong><p>Discuss what a language-support system should provide.</p></div>
+      <div><b>04</b><strong>Exploring Technology</strong><p>Explore AI, speech recognition, translation and text-to-speech.</p></div>
+      <div><b>05</b><strong>Designing the Solution</strong><p>Develop the SikshaSetu concept from identified requirements.</p></div>
+      <div><b>06</b><strong>Evaluating the Idea</strong><p>Consider usability, accessibility, offline operation and classroom suitability.</p></div>
+    </div>
+  </div>
+
+  <div class="case-solution reveal">
+    <div class="solution-copy"><span>07 · PROPOSED SOLUTION</span><h3>SikshaSetu is an AI-powered vernacular education and translation solution designed to reduce the communication gap between teachers and students.</h3><p>The main concept is to allow a teacher to communicate in a language they are comfortable with while the system translates the communication into the student's familiar language. The system can also support bilingual educational content such as lesson scripts, activities and worksheets.</p></div>
+    <div class="two-way-flow"><div><b>Teacher speaks</b><i>↓</i><b>AI processes speech</b><i>↓</i><b>Speech → text</b><i>↓</i><b>Text is translated</b><i>↓</i><b>Student receives translated output</b></div><div><b>Student speaks</b><i>↓</i><b>AI processes speech</b><i>↓</i><b>Speech → text</b><i>↓</i><b>Text is translated</b><i>↓</i><b>Teacher receives translated output</b></div></div>
+  </div>
+
+  <div class="case-workflow reveal">
+    <div class="workflow-head"><span>08 · SYSTEM WORKFLOW</span><small>Two-way classroom communication</small></div>
+    <div class="flow detailed-flow">
+      <div class="flow-step"><span class="flow-icon">🎙</span><b>Voice Input</b><small>Teacher or student speaks</small></div><i>→</i>
+      <div class="flow-step"><span class="flow-icon">Aa</span><b>Speech Recognition</b><small>Spoken input → text</small></div><i>→</i>
+      <div class="flow-step ai"><span class="flow-icon">AI</span><b>Language Translation</b><small>Source → selected target</small></div><i>→</i>
+      <div class="flow-step"><span class="flow-icon">文</span><b>Output Generation</b><small>Text + audio</small></div><i>→</i>
+      <div class="flow-step end"><span class="flow-icon">✓</span><b>Classroom Interaction</b><small>Continue the conversation</small></div>
+    </div>
+    <div class="example-route"><b>Example routes</b><span>Hindi → Tribal Language</span><span>Tribal Language → Hindi</span></div>
+  </div>
+
+  <div class="feature-detail reveal"><div class="mini-heading"><span>09</span><div><label>KEY FEATURES</label><h3>Core capabilities</h3></div></div><div class="feature-detail-grid"><article><b>Real-Time Voice Translation</b><p>Two-way voice communication between teachers and students.</p></article><article><b>Mother-Tongue Support</b><p>Focus on languages used in tribal and low-resource educational environments.</p></article><article><b>Bilingual Learning Content</b><p>Lesson scripts, instructions and activities can be presented bilingually.</p></article><article><b>AI-Generated Worksheets</b><p>Help generate bilingual worksheets and classroom activities.</p></article><article><b>Text-to-Speech</b><p>Translated text can be converted into speech for familiar-language audio support.</p></article><article><b>Offline Capability</b><p>Designed with offline usage in mind for areas with poor connectivity.</p></article><article><b>Simple User Interface</b><p>Source/target selection, microphone, translated text, audio playback, learning content and worksheet generation.</p></article></div></div>
+
+  <div class="uiux reveal"><div><span>10 · UI / UX DESIGN</span><h3>Simple enough for classroom use.</h3><p>The case study emphasizes a simple interface where the teacher can select the source and target language and start speaking without complicated menus.</p></div><div class="ui-list"><b>Source language selection</b><b>Target language selection</b><b>Microphone button</b><b>Translated text area</b><b>Audio playback</b><b>Learning content</b><b>Worksheet generation</b><small>Designed to be suitable for low-cost Android devices.</small></div></div>
+
+  <div class="scenario reveal"><span>11 · CASE STUDY SCENARIO</span><h3>Hindi-speaking teacher ↔ mother-tongue-speaking students</h3><p>A primary school teacher is comfortable teaching in Hindi while students mainly communicate in their mother tongue. SikshaSetu can process the teacher's Hindi speech and provide translated output in the student's selected language. The student can respond in their mother tongue and the system can translate the response back for the teacher.</p><div class="persona-flow"><b>Teacher speaks</b><i>→</i><b>AI processes</b><i>→</i><b>Student receives</b><i>→</i><b>Student responds</b><i>→</i><b>Teacher receives</b></div></div>
+
+  <div class="observations reveal"><div class="mini-heading"><span>12</span><div><label>OBSERVATIONS</label><h3>What the case study highlighted</h3></div></div><div class="observation-grid"><b>Easy to use</b><b>Affordable</b><b>Accessible</b><b>Suitable for actual users</b><b>Reliable in low-connectivity areas</b><b>Designed for classroom environments</b><p>Voice interaction can be useful because speaking can be easier than typing, especially for young students. The case study also emphasized solving the user's actual problem rather than adding technology only for demonstration.</p></div></div>
+
+  <div class="impact-detail reveal"><div class="mini-heading"><span>13</span><div><label>IMPACT OF THE PROPOSED SOLUTION</label><h3>Benefits across education</h3></div></div><div class="impact-detail-grid"><article><b>Educational Impact</b><p>Students can receive explanations in a language they are more comfortable with, supporting understanding and participation.</p></article><article><b>Social Impact</b><p>Can reduce communication barriers between teachers and students from different linguistic backgrounds.</p></article><article><b>Teacher Support</b><p>Teachers can communicate without requiring complete knowledge of the student's mother tongue.</p></article><article><b>Accessibility</b><p>Voice-based interaction can make digital educational tools easier to use.</p></article><article><b>Technological Impact</b><p>Demonstrates how AI, speech recognition, translation and text-to-speech can be combined for education.</p></article><article><b>Economic Impact</b><p>A software-based solution can reduce dependency on additional language-specific support where resources are limited.</p></article></div></div>
+
+  <div class="case-details full-details">
+    <details class="reveal"><summary>14 · Challenges & limitations</summary><div class="detail-grid"><p><b>Low-Resource Languages:</b> AI models may have limited training data for Ho, Mundari and Santhali.</p><p><b>Translation Accuracy:</b> AI translation may not always capture exact meaning or local context.</p><p><b>Voice Recognition:</b> Background noise and pronunciation differences can affect speech recognition.</p><p><b>Offline AI:</b> Running AI models offline on low-cost devices requires optimization.</p><p><b>Device Limitations:</b> The application needs to work efficiently on limited RAM and processing power.</p><p><b>Classroom Environment:</b> The system should handle background noise and multiple people speaking.</p></div></details>
+    <details class="reveal"><summary>15 · Testing & evaluation</summary><div class="tag-cloud"><b>Translation accuracy</b><b>Voice recognition accuracy</b><b>Response time</b><b>Ease of use</b><b>Quality of generated educational content</b><b>User experience</b><b>Device performance</b></div><p>The purpose of testing is to check whether the system can provide useful and understandable translations without creating additional difficulty for teachers.</p></details>
+    <details class="reveal"><summary>16 · Learnings from the case study</summary><ul><li>Understanding the user is important before developing the technology.</li><li>Language can become a major barrier to effective education.</li><li>AI can support accessibility as well as automation.</li><li>Voice interaction can make educational technology more natural.</li><li>Offline support is important for areas with limited connectivity.</li><li>A good solution should be simple enough for non-technical users.</li><li>Technology should solve a real problem rather than being added only for demonstration.</li></ul></details>
+    <details class="reveal"><summary>17 · Expected outcome</summary><ul><li>Support Hindi-to-vernacular translation.</li><li>Provide two-way voice communication.</li><li>Generate bilingual learning materials.</li><li>Support classroom activities.</li><li>Reduce language-related communication problems.</li><li>Work in low-connectivity environments.</li><li>Improve accessibility of mother-tongue-based education.</li></ul></details>
+    <details class="reveal"><summary>18 · Future scope</summary><p>Future improvements include adding more Indian regional and tribal languages, better speech recognition, more accurate translation models, more educational content, improved offline AI performance on low-cost devices, and support for more subjects, age groups and educational activities.</p></details>
+    <details class="reveal"><summary>19 · Conclusion</summary><p>The case study at Rathinam Technical Campus highlighted the importance of language in primary education. SikshaSetu's proposed approach combines voice recognition, language translation, text-to-speech and bilingual educational content to create a bridge between teachers and students, while considering limited connectivity, device limitations and low-resource languages.</p></details>
+  </div>
+</section>
+
+
+<section id="solution-sheet" class="section sheet">
+  <div class="section-top reveal">
+    <div><label>08 · SIH SOLUTION SHEET</label><h2>The complete solution data, organized in one place.</h2></div>
+    <p>Key information from the supplied SIH26042 solution sheet is presented here without hiding important fields. Search to quickly find any item.</p>
+  </div>
+  <div class="sheet-tools"><input id="search" type="search" placeholder="Search solution-sheet data…"><span id="count"></span></div>
+  <div class="sheet-list" id="sheet"></div>
+</section>
+
+<section class="closing">
+  <div class="closing-inner reveal">
+    <img src="assets/sikshasetu-logo.png" alt="SikshaSetu">
+    <h2>Languages connect.<br><em>Learning empowers.</em></h2>
+    <p>SikshaSetu · SIH26042 · Smart Education · Rathinam Technical Campus</p>
+    <a href="#home" class="back-top">Back to top ↑</a>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div><b>SikshaSetu</b><span>AI-assisted vernacular education</span></div>
+  <div>Smart India Hackathon 2026 · SIH26042</div>
+  <div>Rathinam Technical Campus · Coimbatore</div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
